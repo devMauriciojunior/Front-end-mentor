@@ -1,18 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 
 :root {
    --Darkcyan: hsl(158, 36%, 37%);
    --Cream: hsl(30, 38%, 92%);
-
    --Verydarkblue: hsl(212, 21%, 14%);
    --Darkgrayishblue: hsl(228, 12%, 48%);
    --White: hsl(0, 0%, 100%);
+
+   --font1: 'Fraunces', serif;
+   --font2: 'Montserrat', sans-serif;
 }
 
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+}
+
+body, html {
+   background-color: var(--Cream);
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow-x: hidden;
+}
+
+.corpo {
+   background-color: var(--White);
+   width: 23.4375rem;
+   border-radius: 10px;
+}
+
+.corpo div#img {
+   display: block;
+   background: url(imgs/image-product-mobile.jpg) no-repeat center;
+   background-size: cover;
+   height: 16.875rem;
+   border-radius: 10px 10px 0px 0px;
+}
+
+.corpo .textos {
+   padding: 25px;
+}
+
+.corpo p {
+   color: var(--Darkgrayishblue);
+   font-family: var(--font2);
+   font-size: 14px;
+   margin-bottom: 13px;
+}
+
+.corpo .p-inicial {
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-size: 0.785rem;
+}
+
+.corpo .p-secun {
+   line-height: 1.5rem;
+}
+
+.corpo h1 {
+   color: var(--Verydarkblue);
+   font-family: var(--font1);
+   font-weight: bold;
+   margin: 13px 0px;
+   line-height: 2rem;
+}
+
+.corpo h2 {
+   font-family: var(--font1);
+   color: var(--Darkcyan);
+   font-size: 32px;
+   width: 145px;
+   display: inline-block;
+   margin-bottom: 17px;
+}
+
+.corpo h3 {
+   position: absolute;
+   font-family: var(--font2);
+   font-weight: 500;
+   font-size: 0.875rem;
+   color: var(--Darkgrayishblue);
+   display: inline-block;
+   transform: translateY(70%);
+   
+}
+
+.corpo button {
+   display: block;
+   width: 100%;
+   height: 50px;
+   background-color: var(--Darkcyan);
+   color: var(--White);
+   font-family: var(--font2);
+   font-weight: bold;
+   font-size: 1rem;
+   border: none;
+   border-radius: 7px;
+   cursor: pointer;
+}
+
+.corpo button:hover {
+   background-color: var(--Verydarkblue);
 }
