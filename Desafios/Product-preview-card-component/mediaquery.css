@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+   .corpo {
+      width: 43.75rem;
+      height: 33.125rem;
+   }
+
+   .corpo > div#img {
+      background: url(imgs/image-product-desktop.jpg) no-repeat center;
+      background-size: cover;
+      float: left;
+      width: 50%;
+      height: 100%;
+      border-radius: 10px 0px 0px 10px;
+   }
+   
+   .corpo > .textos {
+      float: right;
+      width: 50%;
+      height: 100%;
+      padding: 1.875rem;
+   }
+
+   .corpo .textos h1 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      margin: 20px 0px;
+   }
+
+   .corpo .textos p {
+      font-size: 1.0625rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.7rem;
+   }
+
+   .corpo .textos .p-secun {
+      margin-bottom: 2.1875rem;
+   }
+
+   .corpo .textos h2 {
+      font-size: 2.5rem;
+      width: 11.25rem;
+      margin-bottom: 1.5625rem;
+   }
+
+   .corpo .textos h3 {
+      transform: translateY(85%);
+   }
+
+   .corpo .textos br {
+      display: none;
+   }
+}
