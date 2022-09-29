@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+   --Softblue: #8bacda;
+   --Cyan: #00fff7;
+   --White: #ffffff;
+   --Verydarkblue1: #0d192b;
+   --Verydarkblue2: #14253d;
+   --Verydarkblue3: #2f415b;
+   --font-family: 'Outfit', sans-serif;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body {
+   background-color: var(--Verydarkblue1);
+   font-family: var(--font-family);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+}
+
+.card-container {
+   background-color: var(--Verydarkblue2);
+   display: flex;
+   flex-direction: column;
+   max-width: 350px;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+.imgs-container {
+   position: relative;
+}
+
+.imgs-container .img-principal {
+   width: 100%;
+   height: 100%;
+   display: block;
+   border-radius: 3%;
+}
+
+.imgs-container .card-view {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   border-radius: 10px;
+   background-color: #00fff779;
+   opacity: 0;
+   transition: ease-in-out .3s;
+}
+
+.imgs-container .card-view:hover {
+   opacity: 1;
+   cursor: pointer;
+}
+
+.text-container .equilibrium h1 {
+   color: white;
+   width: 165px;
+   padding: 20px 0px;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.text-container .equilibrium h1:hover {
+   color: var(--Cyan);
+   cursor: pointer;
+   transition: ease-in-out .3s;
+}
+
+.text-container .equilibrium p {
+   color: var(--Softblue);
+   font-size: 18px;
+   font-weight: 300;
+   padding-bottom: 20px;
+}
+
+.eth-day {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   padding-bottom: 20px;
+}
+
+.eth-day::after {
+   content: '';
+   display: block;
+   background-color: var(--Verydarkblue3);
+   width: 100%;
+   height: 1px;
+   position: absolute;
+   bottom: 0;
+}
+
+.eth-day p.price {
+   color: var(--Cyan);
+   font-weight: 400;
+}
+
+.eth-day p.price::before {
+   content: '';
+   display: inline-block;
+   background: url(img/icon-ethereum.svg) no-repeat center;
+   height: 21px;
+   width: 15px;
+   margin-right: 7px;
+   vertical-align: middle;
+}
+
+.eth-day p.day {
+   color: var(--Softblue);
+   font-size: 0.875rem;
+   font-weight: 300;
+}
+
+.eth-day p.day::before {
+   content: '';
+   display: inline-block;
+   background: url(img/icon-clock.svg) no-repeat center;
+   height: 21px;
+   width: 15px;
+   margin-right: 7px;
+   vertical-align: middle;
+}
+
+.creator {
+   display: flex;
+   align-items: center;
+   padding: 15px 0px 10px 0px;
+}
+
+.creator p {
+   
+   color: var(--Softblue);
+   font-weight: 300;
+   font-size: 0.875rem;
+}
+
+.creator a {
+   color: var(--White);
+}
+
+.creator a:hover {
+   color: var(--Cyan);
+   cursor: pointer;
+   transition: ease-in-out .3s;
+}
+
+.creator img {
+   height: 35px;
+   margin-right: 15px;
+   border: 1px solid white;
+   border-radius: 50%;
+}
