@@ -167,3 +167,17 @@ body {
    border: 1px solid white;
    border-radius: 50%;
 }
+
+@media (max-width: 350px) {
+   .eth-day {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding-bottom: 1.25rem;
+      flex-direction: column;
+   }
+
+   .eth-day p.price {
+      margin-bottom: 0.625rem;
+   }}
