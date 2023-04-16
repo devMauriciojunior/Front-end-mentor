@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family= Lexend +Deca & display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Big+Shoulders+Display:wght@700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 :root {
    --font1: 'Lexend Deca', sans-serif;
-   --font2: 'Big Shoulders Display', cursiva;
+   --font2: 'Big Shoulders Display', cursive;
 
    --BrightOrange: hsl(31, 77%, 52%);
    --DarkCyan: hsl(184, 100%, 22%);
@@ -17,4 +17,123 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   border: none;
+   text-decoration: none;
+}
+
+body {
+   background-color: var(--background-headings-buttons);
+   display: flex;
+   justify-content: center;
+   align-items: center;;
+}
+
+.container {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Sedans, .Suvs, .Luxury {
+   padding: 2.5rem;
+   max-width: 270px;
+   min-height: 390px;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+
+.Sedans {
+   background-color: var(--BrightOrange);
+   border-top-left-radius: .5rem;
+   border-bottom-left-radius: .5rem;
+}
+
+.Suvs {
+   background-color: var(--DarkCyan);
+}
+
+.Luxury {
+   background-color: var(--VerydarkCyan);
+   border-top-right-radius: .5rem;
+   border-bottom-right-radius: .5rem;
+}
+
+img {
+   margin: 10px 0;
+}
+
+.title {
+   font-family: 'Big Shoulders Display';
+   text-transform: uppercase;
+   color: var(--background-headings-buttons);
+   font-weight: 700;
+   font-size: 1.5rem;
+   margin: 15px 0px;
+}
+
+.paragraph {
+   color: var(--paragraphs);
+   font-size: .8rem;
+   font-family: var(--font1);
+   line-height: 1.5rem;
+}
+
+.btn {
+   width: 120px;
+   margin-top: 30px;
+   padding: 15px;
+   border-radius: 25px;
+   font-weight: 700;
+   background-color: var(--background-headings-buttons);
+   cursor: pointer;
+}
+
+.btn:hover {
+   outline: 2px solid var(--background-headings-buttons);
+   background-color: transparent;
+}
+
+.Sedans > .btn {
+   color: var(--BrightOrange);
+}
+.Sedans > .btn:hover {
+   color: var(--background-headings-buttons);
+}
+
+.Suvs > .btn {
+   color: var(--DarkCyan);
+}
+.Suvs > .btn:hover {
+   color: var(--background-headings-buttons);
+}
+
+.Luxury > .btn {
+   color: var(--VerydarkCyan);
+}
+.Luxury > .btn:hover {
+   color: var(--background-headings-buttons);
+}
+
+@media screen and (max-width: 810px) {
+         .container { 
+            margin: 10px 0px 10px 0px;
+            height: auto;
+            flex-direction: column;
+         }
+
+         .Sedans {
+            border-radius: 0px;
+            border-top-right-radius: .5rem;
+            border-top-left-radius: .5rem;
+         }
+
+         .Luxury {
+            border-radius: 0px;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+         }
 }
