@@ -37,9 +37,9 @@ body {
 }
 
 .Sedans, .Suvs, .Luxury {
-   padding: 2.5rem;
-   max-width: 270px;
-   min-height: 390px;
+   padding: 2.3rem;
+   max-width: 280px;
+   height: 400px;
    display: flex;
    flex-flow: column wrap;
    justify-content: space-around;
@@ -79,7 +79,7 @@ img {
    color: var(--paragraphs);
    font-size: .8rem;
    font-family: var(--font1);
-   line-height: 1.5rem;
+   line-height: 1.3rem;
 }
 
 .btn {
